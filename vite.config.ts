@@ -1,6 +1,6 @@
-import { fileURLToPath, URL } from "url";
-
+/// <reference types="vitest" />
 import { defineConfig, loadEnv } from "vite";
+import { fileURLToPath, URL } from "url";
 import vue from "@vitejs/plugin-vue";
 import electron from "vite-plugin-electron";
 import { join } from "path";
@@ -50,6 +50,11 @@ export default ({ mode }) => {
     server: {
       host: pkg.env.VITE_DEV_SERVER_HOST,
       port: pkg.env.VITE_DEV_SERVER_PORT,
+    },
+    test: {
+      coverage: {
+        reporter: ["json-summary"],
+      },
     },
   });
 };
