@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 
 import { mount } from "@vue/test-utils";
-import HelloWorld from "../HelloWorld.vue";
+import HelloWorld from "@/components/HelloWorld.vue";
 import { createI18n } from "vue-i18n";
 import { enUS, ptBR } from "@/locales";
 

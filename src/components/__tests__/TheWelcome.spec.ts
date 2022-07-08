@@ -2,7 +2,7 @@ import { describe, it, expect, vi } from "vitest";
 import { createTestingPinia } from "@pinia/testing";
 
 import { mount } from "@vue/test-utils";
-import TheWelcome from "../TheWelcome.vue";
+import TheWelcome from "@/components/TheWelcome.vue";
 
 describe("The Welcome", () => {
   it("renders properly", () => {

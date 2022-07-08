@@ -53,7 +53,9 @@ export default ({ mode }) => {
     },
     test: {
       coverage: {
-        reporter: ["json-summary"],
+        src: ["./src"],
+        all: true,
+        reporter: ["text", "json-summary"],
       },
     },
   });
