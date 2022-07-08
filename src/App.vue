@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router";
 import HelloWorld from "@/components/HelloWorld.vue";
+import { useDark } from "@vueuse/core";
+
+useDark();
 </script>
 
 <template>
@@ -29,6 +32,10 @@ import HelloWorld from "@/components/HelloWorld.vue";
 <style>
 @import "@/assets/base.css";
 
+html.dark {
+  color-scheme: dark;
+}
+
 #app {
   max-width: 1280px;
   margin: 0 auto;
@@ -50,8 +57,9 @@ header {
 a,
 .green {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
   transition: 0.4s;
+
+  @apply text-purple-400;
 }
 
 @media (hover: hover) {

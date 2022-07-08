@@ -12,7 +12,7 @@ const languages = computed(() => i18n.availableLocales);
 
 <template>
   <div class="greetings">
-    <h1 class="green">{{ msg }}</h1>
+    <h1 class="text-purple-400">{{ msg }}</h1>
     <h3>
       {{ $t("hello.project_created") }}
       <a target="_blank" href="https://www.electronjs.org/">Electron</a> +

@@ -12,10 +12,12 @@
     "test:unit": "vitest run --environment jsdom",
     "test:unit:watch": "vitest --environment jsdom",
     "test:e2e": "concurrently 'cross-env NODE_ENV=test vite --port 4173' 'CYPRESS_BASE_URL=http://127.0.0.1:4173 cypress open --e2e'",
-    "test:e2e:ci": "concurrently 'cross-env NODE_ENV=test vite --port 4173' 'CYPRESS_BASE_URL=http://127.0.0.1:4173 cypress run --e2e'",
+    "test:component": "cross-env NODE_ENV=test cypress open --component",
+    "test:e2e:ci": "concurrently 'cross-env NODE_ENV=test vite --port 4173' 'CYPRESS_BASE_URL=http://127.0.0.1:4173 cypress run'",
     "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false"
   },
   "dependencies": {
+    "@vueuse/core": "^8.9.0",
     "pinia": "^2.0.14",
     "vue": "^3.2.37",
     "vue-i18n": "^9.1.10",
