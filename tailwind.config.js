@@ -9,6 +9,12 @@ module.exports = {
       transparent: "transparent",
       current: "currentColor",
       white: "#ffffff",
+      gray: {
+        200: "#4F4752",
+        300: "#38313A",
+        400: "#2A262C",
+        500: "#161316",
+      },
       purple: {
         100: "#CBB1D3",
         200: "#E7ADFF",

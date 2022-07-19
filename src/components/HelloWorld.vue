@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, ref } from "vue";
 import { useI18n } from "vue-i18n";
+import IconMdi from "./IconMdi.vue";
 
 const i18n = useI18n();
 const locale = ref(i18n.locale);
@@ -13,6 +14,7 @@ const languages = computed(() => i18n.availableLocales);
 <template>
   <div class="greetings">
     <h1 class="text-purple-400">{{ msg }}</h1>
+    <IconMdi icon="thumb-up" class="text-purple-400" />
     <h3>
       {{ $t("hello.project_created") }}
       <a target="_blank" href="https://www.electronjs.org/">Electron</a> +

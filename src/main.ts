@@ -5,6 +5,7 @@ import router from "./router";
 import { createI18n } from "vue-i18n";
 import { enUS, ptBR } from "./locales";
 import "./index.css";
+import "@mdi/font/css/materialdesignicons.min.css";
 
 const i18n = createI18n({
   locale: "en-US",
