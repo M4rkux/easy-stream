@@ -1,4 +1,10 @@
 {
+  "menu": {
+    "home": "Home",
+    "folder": "Folder",
+    "account": "Account",
+    "settings": "Settings"
+  },
   "you_did_it": "You did it!",
   "hello": {
     "project_created": "You’ve successfully created a project with",

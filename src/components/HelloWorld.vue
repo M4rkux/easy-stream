@@ -15,6 +15,10 @@ const languages = computed(() => i18n.availableLocales);
   <div class="greetings">
     <h1 class="text-purple-400">{{ msg }}</h1>
     <IconMdi icon="thumb-up" class="text-purple-400" />
+    <IconMdi icon="account-circle-outline" class="text-purple-100" />
+    <IconMdi icon="cog" class="text-purple-200" />
+    <IconMdi icon="folder" class="text-purple-300" />
+    <IconMdi icon="filmstrip" class="text-white" />
     <h3>
       {{ $t("hello.project_created") }}
       <a target="_blank" href="https://www.electronjs.org/">Electron</a> +

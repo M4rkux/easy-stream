@@ -1,4 +1,10 @@
 {
+  "menu": {
+    "home": "Home",
+    "folder": "Pasta",
+    "account": "Conta",
+    "settings": "Configurações"
+  },
   "you_did_it": "Você conseguiu!",
   "hello": {
     "project_created": "Você criou com sucesso um projeto com",
