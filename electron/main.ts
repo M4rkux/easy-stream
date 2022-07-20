@@ -33,6 +33,8 @@ async function createWindow() {
   win = new BrowserWindow({
     title: "Main window",
     icon: join(ROOT_PATH.public, "favicon.ico"),
+    width: 1920,
+    height: 1080,
     webPreferences: {
       preload,
       nodeIntegration: true,

@@ -17,7 +17,8 @@ defineProps<{
 
 <style scoped lang="scss">
 .item {
-  @apply flex justify-center h-[48px] border-solid border-0 border-l-2 border-transparent text-purple-100;
+  @apply flex justify-center h-[48px]  text-purple-100 ml-[2px];
+  @apply border-solid border-0 border-l-2 border-transparent;
 
   &.router-link-exact-active {
     @apply border-white text-white;

@@ -1,7 +1,10 @@
 <script setup lang="ts">
-defineProps<{ icon: string }>();
+defineProps<{ icon: string; text?: string }>();
 </script>
 
 <template>
-  <i class="mdi mdi-24px" :class="`mdi-${icon}`"></i>
+  <div class="items-center flex gap-x-[5px]">
+    <i class="mdi mdi-24px" :class="`mdi-${icon}`"></i>
+    <span v-if="text">{{ text }}</span>
+  </div>
 </template>

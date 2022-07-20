@@ -24,7 +24,7 @@ import NavItem from "./NavItem.vue";
 
 <style scoped lang="scss">
 .nav-bar {
-  @apply flex flex-col h-screen justify-between w-[48px] bg-gray-300;
+  @apply flex flex-col h-full justify-between w-[48px] py-[2px] bg-gray-300;
 
   div {
     @apply flex flex-col;

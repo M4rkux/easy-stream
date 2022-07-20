@@ -9,5 +9,8 @@
   "hello": {
     "project_created": "You’ve successfully created a project with",
     "whats_next": "What's next?"
+  },
+  "button": {
+    "end_stream": "End stream"
   }
 }

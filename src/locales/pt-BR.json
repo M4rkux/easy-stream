@@ -9,5 +9,8 @@
   "hello": {
     "project_created": "Você criou com sucesso um projeto com",
     "whats_next": "O que vem agora?"
+  },
+  "button": {
+    "end_stream": "Encerrar"
   }
 }
